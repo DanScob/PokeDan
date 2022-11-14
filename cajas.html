@@ -32,6 +32,9 @@
            border-radius: 50%;
         }
         
+        h1 {
+            font-size: 500px;
+        }
         .parent {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -51,23 +54,52 @@ grid-row-gap: 3px;
     </style>
 </head>
 <body>
-   <h1>pokes</h1>
-   <input type="number" id="campo">
-   <img  id="imagen" src="" alt="">
-   <button 
-   onclick="buscarpoke()"
-   >buscar</button>
+    <div class="parent">
+        <div class="div1">
+            <div class="topper">
+
+                <H1 id="titulo" class="text">Hola mundo</H1>
+                <H1 id="titulo">Hola 2</H1>
+                
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dolorum doloribus nihil minus repellendus officiis possimus laborum 
+                    consequuntur similique tenetur blanditiis quam reprehenderit omnis hic, obcaecati est animi mollitia aperiam. Eveniet!</p>
+                </div>
+                </div>
+                <div class="div2"> 
+                    
+            <div class="box"></div>
+        </div>
+        <div class="div3">
+            <div class="box"></div>
+             </div>
+             <div class="div4">
+                 <div class="box"></div>
+                 </div>
+             <div class="div5">
+                 <div class="ball"></div>       
+       
+                 </div>
+             <div class="div6"> 
+                 <div class="ball"></div>        
+
+             </div>
+             <div class="div7"> 
+                 <div class="ball"></div>
+
+             </div>
+            </div> 
+            
+    <div class="topper">
+        
+    </div>
         
 </body>
-<script src="./index.js"></script>
 <script >
-
             fetch("./pokemon.json/pokedex.json")
             .then(res=>res.json())
             .then(data=>{
                 window.pokelist = data
-            })</script>
-
-fun
-
+            })
+        </script>
 </html>
